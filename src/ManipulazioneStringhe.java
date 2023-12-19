@@ -7,9 +7,6 @@ public class ManipulazioneStringhe {
         System.out.println("Inserisci una stringa: ");
         String stringa = scanner.next();
 
-        String lunghezza = lunghezza(stringa);
-        System.out.println("Lunghezza di stringa e: " + lunghezza);
-
         scanner.close();
     }
 
