@@ -7,8 +7,8 @@ public class ManipulazioneStringhe {
         System.out.println("Inserisci una stringa: ");
         String stringa = scanner.next();
 
-        int lunghezza = lunghezza(stringa);
-        System.out.println("Lunghezza di stringa e: " + lunghezza);
+        String toUppercase = toUppercaseString(stringa);
+        System.out.println("Stringa in Uppercase e: " + toUppercase);
 
         String toLowercaseString = toLowercaseString(stringa);
         System.out.println("String in lowercase: " + toLowercaseString);
@@ -34,6 +34,10 @@ public class ManipulazioneStringhe {
         char prelastSymbol = stringa.charAt(lunghezza - 2);
         String result = "" + prelastSymbol + lastSymbol;
         return result;
+    }
+
+    public static String toUppercaseString(String stringa) {
+        return stringa.toUpperCase();
     }
 
 }
