@@ -5,12 +5,17 @@ public class ManipulazioneStringhe {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Inserisci una stringa: ");
-        int stringa = scanner.nextInt();
+        String stringa = scanner.next();
 
-        String lunghezza = lunghezza(stringa);
-        System.out.println("Lunghezza di stringa e: " + lunghezza);
+        String toUppercase = toUppercaseString(stringa);
+        System.out.println("Stringa in Uppercase e: " + toUppercase);
 
         scanner.close();
+    }
+
+    public static String toUppercaseString(String stringa) {
+        return stringa.toUpperCase();
+
     }
 
 }
