@@ -13,6 +13,9 @@ public class ManipulazioneStringhe {
         String toLowercaseString = toLowercaseString(stringa);
         System.out.println("String in lowercase: " + toLowercaseString);
 
+        String lastTwoSymbols = getLastTwoSymbols(stringa);
+        System.out.println("Last 2 symbols: " + lastTwoSymbols);
+
         scanner.close();
     }
 
@@ -23,6 +26,14 @@ public class ManipulazioneStringhe {
 
     public static String toLowercaseString(String stringa) {
         return stringa.toLowerCase();
+    }
+
+    public static String getLastTwoSymbols(String stringa) {
+        int lunghezza = lunghezza(stringa);
+        char lastSymbol = stringa.charAt(lunghezza - 1);
+        char prelastSymbol = stringa.charAt(lunghezza - 2);
+        String result = "" + prelastSymbol + lastSymbol;
+        return result;
     }
 
 }
