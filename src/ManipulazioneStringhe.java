@@ -5,7 +5,7 @@ public class ManipulazioneStringhe {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Inserisci una stringa: ");
-        int stringa = scanner.nextInt();
+        String stringa = scanner.next();
 
         String lunghezza = lunghezza(stringa);
         System.out.println("Lunghezza di stringa e: " + lunghezza);
