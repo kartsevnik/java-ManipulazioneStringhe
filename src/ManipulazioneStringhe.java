@@ -15,6 +15,8 @@ public class ManipulazioneStringhe {
 
         String lastTwoSymbols = getLastTwoSymbols(stringa);
         System.out.println("Last 2 symbols: " + lastTwoSymbols);
+        char firstSymbol = getfirstSymbol(stringa);
+        System.out.println("FirstSymbol di stringa e: " + firstSymbol);
 
         scanner.close();
     }
@@ -38,6 +40,10 @@ public class ManipulazioneStringhe {
 
     public static String toUppercaseString(String stringa) {
         return stringa.toUpperCase();
+    }
+
+    public static char getfirstSymbol(String stringa) {
+        return stringa.charAt(0);
     }
 
 }
